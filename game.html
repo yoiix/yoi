@@ -1,0 +1,42 @@
+< html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جرب </title>
+    <style>
+        #escapeButton {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>اهلا !</h1>
+  
+
+
+<button>اضغط هنا</button>
+
+
+<button id="btn">لا تضغط علي!</button>
+
+<script>
+    let btn = document.getElementById("btn");
+
+    btn.onmouseover = function() {
+        btn.style.position = "absolute";
+        btn.style.left = Math.random() * window.innerWidth + "px";
+        btn.style.top = Math.random() * window.innerHeight + "px";
+    };
+</script>
+</body>
+</html>
